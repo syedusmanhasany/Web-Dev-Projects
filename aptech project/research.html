@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>32 Smiles</title>
+  <link rel="icon" href="icon.jpg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+            *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background:royalblue;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: royalblue;
+  background: #ffffff;
+}
+nav ul li a.active:hover{
+  color:white;
+  background:darkblue;
+}
+
+nav ul li a:hover{
+  color: darkblue;
+  background: #ffffff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background:royalblue;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: darkblue;
+    transition: .1s;
+  }
+}
+.sticky{
+    position: flex;
+    top: 0;
+    width: 100%;
+
+}
+ul li ul.dropdown li {
+  display: block;
+}
+ul li ul.dropdown{
+  width: 100%;
+  background: royalblue;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  text-align: center;
+}
+ul li:hover ul.dropdown{
+ display: block;
+ width: 21%; 
+ border: none;
+ padding: 10px;
+ border-radius: 10px;
+
+}
+    </style>
+</head>
+<body>
+  <nav class="sticky">
+    <div class="logo"><span style="color:yellow; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">32</span>Smiles</div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a href="project2.html">Home</a></li>
+      <li><a href="">Professional Education▼</a>
+        
+        <ul class="dropdown">
+
+        <li><a href="Courses.html">courses</a></li><br>
+        <li><a href="help center.html">help</a></li><br>
+        
+        <li><a href="resources.html">resources</a></li><br>
+
+        </ul>
+
+        </li>
+      <li><a href="Patient Education.html">Patient Education</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+    </ul>
+  </nav>
+
+
+  
+    <h1 style="text-align: center; padding-top: 20px; font-size: 50px;" ><b>New Researches in Dentistry</b></h1>
+  <section class="bg-white dark:bg-gray-900">
+    <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Study finds link between gum disease and heart disease</h2>
+            <p class="mb-4">A new study has found that people with gum disease are at a higher risk of developing heart disease. The study, which followed over 10,000 people for 10 years, found that those with gum disease were 50% more likely to develop heart disease than those without gum disease.</p>
+            <p>Regular dental check-ups and cleanings can help prevent gum disease.
+                People with heart disease should pay extra attention to their oral health.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-8">
+            <img class="w-full rounded-lg" src="https://source.unsplash.com/500x800/?dental" alt="office content 1">
+            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://source.unsplash.com/500x800/?dental,clinic" alt="office content 2">
+        </div>
+    </div>
+</section>
+  <section class="bg-white dark:bg-gray-900">
+    <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+        <div class="grid grid-cols-2 gap-4 mt-8">
+            <img class="w-full rounded-lg" src="https://source.unsplash.com/500x800/?toothbrush" alt="office content 1">
+            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://source.unsplash.com/500x800/?dentist" alt="office content 2">
+        </div>
+        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Study shows dental anxiety can be treated with cognitive behavioral therapy
+            </h2>
+            <p class="mb-4">A new study has found that cognitive behavioral therapy (CBT) can be an effective treatment for dental anxiety. The study followed 100 people with dental anxiety and found that those who received CBT had a significant reduction in their anxiety levels.</p>
+            <p>CBT is a form of talk therapy that focuses on changing negative thoughts and behaviors.
+                Other treatments for dental anxiety include sedation and relaxation techniques.</p>
+        </div>
+       
+    </div>
+</section>
+  <section class="bg-white dark:bg-gray-900">
+    <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">New toothpaste ingredient could help prevent cavities</h2>
+            <p class="mb-4">A new study has found that people with gum disease are at a higher risk of developing heart disease. The study, which followed over 10,000 people for 10 years, found that those with gum disease were 50% more likely to develop heart disease than those without gum disease.</p>
+            <p>Xylitol is already used in some sugar-free chewing gums and candies.
+                More research is needed to determine the optimal amount of Xylitol needed to prevent cavities.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-8">
+            <img class="w-full rounded-lg" src="https://source.unsplash.com/500x800/?toothpaste" alt="office content 1">
+            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://source.unsplash.com/500x800/?Invisalign" alt="office content 2">
+        </div>
+    </div>
+</section>
+
+<footer class="text-gray-600 body-font bg-blue-800 ">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-slate-300 text-3xl">32 Smiles</span>
+    </a>
+    <p class="text-lg text-slate-300 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">@ 2023 Copyright
+      <a href="https://twitter.com/knyttneve" class="text-slate-300 text-lg  ml-1" rel="noopener noreferrer" target="_blank">All Right Reserved</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a class="text-lg text-slate-300">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-lg text-slate-300">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-lg text-slate-300">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-lg text-slate-300">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>

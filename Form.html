@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Form.css">
+    <link rel="icon" href="./images/universal-logo.jpg" type="image">
+
+</head>
+<body>
+    <h1 id="title">ABC Survey Form</h1>
+    <p id="description">Thank You For Visiting</p>
+    <form action="post" id="survey-form">
+        <label for="name" id="name-label">Full Name</label>
+        <input type="text" id="name" placeholder="Enter Your Name" class="same" required>
+        
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter Your Email" required class="same">
+        
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" min="13" max="98" placeholder="Enter Your Age" required class="same">
+        
+        <label for="designation">Select Your Designation</label>
+        <select name="designation" id="dropdown" required>
+            <option value="">Select Option</option>
+            <option value="1">Manager</option>
+            <option value="2">CEO</option>
+        </select>
+        
+        <fieldset>
+            <legend>Gender</legend>
+            <label for="radio-btn1" class="gen">
+                <input type="radio" id="radio-btn1" name="options" required value="1"> Male
+            </label>
+            <label for="radio-btn2" class="gen">
+                <input type="radio" id="radio-btn2" name="options" required value="2"> Female
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="b1" class="box">
+                <input type="checkbox" value="1" id="b1"> Web-Dev
+            </label>
+            <label for="b2" class="box">
+                <input type="checkbox" value="1" id="b2"> Web-Dev
+            </label>
+            <label for="b3" class="box">
+                <input id="b3" type="checkbox" value="1"> Web-Dev
+            </label>
+            <label for="b4" class="box">
+                <input id="b4" type="checkbox" value="1"> Web-Dev
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Comments</legend>
+            <textarea name="comments" id="comments" placeholder="Type Your Thoughts..."></textarea>
+        </fieldset>
+        
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>

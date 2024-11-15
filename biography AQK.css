@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #1d1e4c;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.main{
+    width: auto;
+    height: 100%;
+    margin: 20px;
+    background-color: #E5E5FD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.identity{
+    display: flex;
+    gap: 30px;
+}
+.text{
+    padding-top: 240px;
+    font-size: 25px;
+}
+#left{
+    text-align: end;
+}
+.img-size{
+    width:350px;
+    height:350px;
+}
+.img{
+    background-image: url("./images/AQK.jpg");
+    mix-blend-mode:darken;
+    height: 100%;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.second{
+    width: 65vw;
+}
+.bio{
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.para{
+    line-height: 30px;
+}
+
+@media(max-width:768px){
+    .img-size{
+        height: 250px;
+        width: 250px;
+    }
+    .text{
+        font-size: 18px;
+        padding-top: 150px;
+
+    }
+    .bio{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+}
+@media(max-width:435px){
+    .img-size{
+        height: 150px;
+        width: 150px;
+    }
+    .text{
+        font-size: 6px;
+        padding-top: 100px;
+
+    }
+    .bio{
+        font-size: 13px;
+    }
+}

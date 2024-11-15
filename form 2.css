@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #b0abab;
+}
+.form-content{
+    display: block;
+    background-color: #ffffff;
+    max-width: 70vw;
+    height: 90%;
+    margin: auto;
+
+    margin-top: 20px;
+    /* margin-bottom: 30px; */
+    border-radius: 15px;
+    padding: 20px;
+}
+.form-content h1{
+    text-align: center;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+}
+label{
+    display: block;
+}
+.gap{
+    margin-right: 20px;
+}
+input{
+    width: 250px;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid gray;
+
+}
+legend{
+    text-align: center;
+}
+fieldset{
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+select{
+    width: 254px;
+    border-radius: 3px;
+    height: 28px;
+    color: black;
+}
+textarea{
+    width: 528px;
+    height: 60px;
+}
+
+.other{
+    margin-left: 15px;
+}
+
+@media(max-width: 760px){
+    .form-content{
+        width: 50vw;
+    }
+    
+    
+    .parent{
+        flex-direction: column;
+        justify-content: center;
+    }
+    textarea{
+        width:250px;
+        height: 60px;
+    }
+    legend{
+        text-align: start;
+    }
+    fieldset{
+        display: flex;
+        flex-direction: column;
+    }
+    .other{
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 470px){
+    .form-content h1{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    input{
+        width: 170px;
+        height: 25px;
+        border-radius: 3px;
+        border: 1px solid gray;
+    
+    }
+    select{
+        width: 173px;
+        border-radius: 3px;
+        height: 28px;
+        color: black;
+    }
+    textarea{
+        width: 170px;
+        height: 60px;
+    }
+}
+
+
+
+
+
+

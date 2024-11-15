@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Image Containers */
+.img, .img2, .img3 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Background Images */
+.image {
+    background-image: url("./images/image1.png");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.image2 {
+    background-image: url("./images/image2.png");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.image3 {
+    background-image: url("./images/image3.png");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+/* Centering the Button Using Flexbox */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    color: #ffffff;
+    padding: 20px 60px;
+    letter-spacing: 5px;
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds background for visibility */
+}
+
+/* Text Sections */
+.text {
+    padding: 40px;
+    text-align: center;
+}
+
+.text p {
+    padding-top: 20px;
+    color: #313534;
+    line-height: 1.4rem;
+}
+
+.text h3 {
+    font-size: 25px;
+    color: #4b5250;
+}
+
+/* Dark Text Section */
+.dark {
+    background-color: #313534;
+}
+
+.dark p, .dark h3 {
+    color: #ffffff;
+}
+
+/* Adjusting heights for specific sections */
+.img2, .img3 {
+    height: 400px;
+}

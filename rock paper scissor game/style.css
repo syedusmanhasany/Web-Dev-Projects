@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: #292929; 
+}
+
+.heading {
+    background-color: #1d1d1d;
+    color: antiquewhite;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.choices {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.choice {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choice:hover {
+    background-color: #000; 
+    cursor: pointer;
+}
+
+.board {
+    margin-top: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    width: 400px; 
+    background-color: #044e0f;
+    border-radius: 10px;
+    border: 2px solid #000; 
+}
+
+table {
+    margin: 10px;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 5px solid #000; 
+}
+
+th,
+td {
+    padding: 20px;
+    text-align: center;
+}
+
+#user-border {
+    margin-right: 90px;
+}
+
+.msg {
+    background-color: #1d1d1d; 
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 20px;
+    padding: 10px;
+    color: antiquewhite;
+    margin-top: 10px;
+}

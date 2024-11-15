@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ddd9de;
+    overflow-x: hidden;
+}
+
+/* horizontal nav */
+.navoptions{
+    padding-left: 20px;
+    min-height: 10vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+
+}
+.fa-bars{
+    font-size: 20px;
+}
+.ytlogo-size img{
+    margin-left: 10px;
+    width: 120px;
+    mix-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    background-color: silver;
+
+}
+.searchbar-input{
+    width: 500px;
+    height: 40px;
+    padding-left: 15px;
+    border: none;
+    border-right: 1px solid gray;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+.fa-magnifying-glass{
+    font-size: 20px;
+    margin-right: 13px;
+    margin-left: 10px;
+}
+.microphone{
+    border-radius: 50%;
+    font-size: 22px;
+    margin-left: 20px;
+    background-color: silver;
+    text-align: center;
+    padding: 8px 13px;
+}
+.fa-video{
+    margin-right: 20px;
+    margin-left: 250px;
+    font-size: 20px;
+}
+.fa-bell{
+    padding-right: 20px;
+    font-size: 20px;
+}
+.circle-image img{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+/* vertical nav */
+
+.vertical-nav{
+    padding-top: 15px;
+    max-width: 10vw;
+    min-height: 100vh;
+    padding-right: 20px;
+    text-align: center;
+}
+.vertical-icons{
+    padding-top: 25px;
+    margin-left: 18px;
+    font-size: 20px;
+}
+#text-icons{
+    font-size: 12px;
+    margin-left: 15px;
+}
+/* video cards */
+
+
+.container {
+    display: flex;
+    
+}
+.parent{
+    margin-bottom: 25px;
+}
+.video {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.video-card {
+    display: flex;
+    width: 300px;
+    height: 170px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin: 20px 5px;
+}
+.video-con{
+    width: 14%;
+    height: 20%;
+    border-radius: 50%;
+    background-color: cadetblue;
+    position: relative;
+    top: 180px;
+    padding: 10px;
+}
+.content{
+    position: relative;
+    top: 180px;
+    padding-left: 5px;
+}
+@media(max-width: 1024px){
+    .searchbar{
+        margin-left: 100px;
+    }
+
+    .searchbar-input{
+        width: 400px;
+    }
+    .fa-video{
+        margin-left: 100px;
+    }
+}
+@media(max-width: 900px){
+    .fa-video{
+        margin-left: 30px;
+    }
+    .searchbar{
+        width: 380px;
+        margin-left: 50px;
+    }
+}
+@media(max-width: 768px){
+    .searchbar{
+        width: 300px;
+    }
+}
+@media(max-width: 435px){
+    .fa-video{
+        margin-left: 20px;
+    }
+   
+    .searchbar{
+        width: 250px;
+        margin-left: 30px;
+    }
+    .circle-image{
+        margin-right: 10px;
+    }
+
+    .video-card {
+        display: flex;
+        min-width: 100%;
+        max-height: 40vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        margin: 30px 75px;
+    }
+    .video-con{
+        width: 10%;
+        height: 17%;
+    }
+}

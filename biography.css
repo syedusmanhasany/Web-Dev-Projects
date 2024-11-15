@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    width: 96vw;
+    min-height: 96vh;
+    background-color: lightgray;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.content p {
+    margin-top: 20px;
+}
+
+#img-div {
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+#image {
+    height: auto;
+    display: block;
+    margin: auto;
+    width: 80vw;
+    max-width: 100%;
+}
+
+#img-caption {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+#tribute-info {
+    margin-top: 20px;
+}
+
+#tribute-info ul {
+    list-style-type: disc;
+    text-align: left;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#tribute-info li {
+    margin-bottom: 10px;
+}
+
+#tribute-link {
+    color: blue;
+    text-decoration: none;
+}
+
+#tribute-link:hover {
+    text-decoration: underline;
+}

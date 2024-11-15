@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>32 Smiles</title>
+  <link rel="icon" href="icon.jpg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background:royalblue;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: royalblue;
+  background: #ffffff;
+}
+nav ul li a.active:hover{
+  color:white;
+  background:darkblue;
+}
+
+nav ul li a:hover{
+  color: darkblue;
+  background: #ffffff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background:royalblue;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: darkblue;
+    transition: .1s;
+  }
+}
+.sticky{
+    position: flex;
+    top: 0;
+    width: 100%;
+
+}
+ul li ul.dropdown li {
+  display: block;
+}
+ul li ul.dropdown{
+  width: 100%;
+  background: royalblue;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  text-align: center;
+}
+ul li:hover ul.dropdown{
+ display: block;
+ width: 21%; 
+ border: none;
+ padding: 10px;
+ border-radius: 10px;
+
+}
+
+    </style>
+
+
+</head>
+<body>
+  <nav class="sticky">
+    <div class="logo"><span style="color:yellow; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">32</span>Smiles</div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a href="project2.html">Home</a></li>
+      <li><a href="">Professional Education▼</a>
+        
+        <ul class="dropdown">
+
+        <li><a href="Courses.html">courses</a></li><br>
+        <li><a href="help center.html">help</a></li><br>
+        
+        <li><a href="resources.html">resources</a></li><br>
+
+        </ul>
+
+        </li>
+      <li><a href="Patient Education.html">Patient Education</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+    </ul>
+  </nav>
+  
+    
+      <h1 style="text-align: center; font-weight: bold; font-size: 30px; padding: 20px; padding-top: 50px; font-family: georgia;">The foundation of a great dental career starts with education</h1>
+      <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero"
+                    src="https://source.unsplash.com/1200x800/?dental,clinic">
+            </div>
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Partnering with you to move oral health forward
+                    <br class="hidden lg:inline-block">
+                </h1>
+                <p class="mb-8 leading-relaxed">Dentists are highly regarded by the communities they serve for their contributions to the general health of the public as well as their drive to improve the lives of those around them. Exercise creativity in their daily work. Dentistry is often referred to as an art.
+            </div>
+        </div>
+    </section>
+    <hr>
+   
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col">
+            <div class="h-1 bg-gray-200 rounded overflow-hidden">
+              <div class="w-24 h-full bg-blue-600"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+              <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Transform your passion into a dental career</h1>
+              <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Dental education involves the teaching and learning of the future generations of dentists to prevent, diagnose and treat oral diseases and meet the dental needs and demands of the individual patients and the public.</p>
+            </div>
+          </div>
+          <h1 style="text-align: center; font-size:40px; font-weight: bold; padding: 40px;">Courses We Offer</h1>
+          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full" src="https://source.unsplash.com/720x600/?medicines">
+              </div>
+              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Introduction to Dental Medicine
+            </h2>
+              <p class="text-base leading-relaxed mt-2">This course provides an overview of dental medicine to engage, educate, excite and assist you in improving the oral health of your patients and members of your community.This will include discussions of mouth, jaw, and tooth anatomy, pathology, and treatment. We will talk about differences between patients and the unique roles that different members of the dental field may play in treatment depending on the patient and condition.</p>
+              
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full" src="https://source.unsplash.com/720x600/?dental Implant">
+              </div>
+              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Implant Dentistry
+            </h2>
+              <p class="text-base leading-relaxed mt-2">Implant Dentistry is one of the most dynamic and rapidly developing areas within oral health care. In spite of increasing popularity of implantology, it is a relatively new discipline within dental education and remains limited to post-graduate courses offered by dental schools in many parts of the world today.</p>
+             
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full" src="https://source.unsplash.com/720x600/?dental books">
+              </div>
+              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Dentistry 101
+            </h2>
+              <p class="text-base leading-relaxed mt-2">Dentistry 101 is an introduction to the exciting and diverse field of dentistry through the lens of its many practitioners. If you’re interested in exploring dentistry as a profession, or if you’re ready to pursue a career in it and want to prepare yourself for dental school and the profession that lies ahead, Dentistry 101 will help you better envision the paths you can take.</p>
+              </div>
+              
+          </div>
+        </div>
+
+        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img alt="content" class="object-cover object-center h-full w-full" src="https://source.unsplash.com/720x600/?dental diseases">
+            </div>
+            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The Oral Cavity
+          </h2>
+            <p class="text-base leading-relaxed mt-2">This course will focus on the interprofessional realtionship of dentistry and medicine. For each session, the medical specialist will present a broad overview of specific disease entity which will be followed by a dental educator discussing the relevant oral manifestations and implications. The final module of each session will be devoted to the interaction between the dental and  other health care professionals.</p>
+          </div>
+
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img alt="content" class="object-cover object-center h-full w-full" src="https://source.unsplash.com/720x600/?toothbrush">
+            </div>
+            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Materials in Oral Health
+          </h2>
+            <p class="text-base leading-relaxed mt-2">Materials in Oral Health is a 4-week course open to all interested learners. In the course, you will learn about the special properties and benefits of biomaterials including, titanium and titanium alloys, zirconia and other alloys, ceramics, and modern composites. You will gain insights of the practical use of these biomaterials in different aspects of dentistry and clinical implications.</p>
+          </div>
+
+          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img alt="content" class="object-cover object-center h-full w-full" src="https://source.unsplash.com/720x600/?dental,clinic">
+            </div>
+            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Frontiers in Dentistry
+          </h2>
+            <p class="text-base leading-relaxed mt-2">In this course, Frontiers in Dentistry, you will be able to explore some of the latest advances in the field of dental medicine. The innovations in therapeutic techniques as well as our understanding of the biomedical sciences have been made possible by our research enterprise which integrates the latest emerging technology along with interdisciplinary collaborations. </p>
+          </div>
+
+        </div>
+      </div>
+      </section>
+
+     <div style="  padding-left: 450px;">
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class=" object-center h-full w-full" src="https://source.unsplash.com/1200x800/?dental,clinic">
+              </div>
+              <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Get Enrolled Now to start your career as a dentist</h2>
+              <p class="leading-relaxed text-base">The journey to becoming a dentist is long and challenging and that leads to different paths in dentistry, Click on the Resgistraion button below to start your carees as a Dentist.</p>
+              <button class="flex mx-auto mt-6 text-white bg-blue-500 border-0 py-2 px-5 focus:outline-none hover:bg-yellows-600 rounded"> <a href="course form.html">Enroll Now</a> </button>
+            </div>
+          
+        </div>
+      </section>
+     </div> 
+     <footer class="text-gray-600 body-font bg-blue-800 ">
+      <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-slate-300 text-3xl">32 Smiles</span>
+        </a>
+        <p class="text-lg text-slate-300 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">@ 2023 Copyright
+          <a href="https://twitter.com/knyttneve" class="text-slate-300 text-lg  ml-1" rel="noopener noreferrer" target="_blank">All Right Reserved</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="text-lg text-slate-300">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-lg text-slate-300">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-lg text-slate-300">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-lg text-slate-300">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+  
+
+
+     
+</body>
+</html>

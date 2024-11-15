@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x: hidden;
+}
+/* navbar */
+.navbar{
+    min-width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 20px;
+}
+.navoptions a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+#flask{
+    margin-right: 20px;
+    font-size: 20px;
+}
+.dots{
+    font-size: 20px;
+    display: inline;
+    /* margin-right: 0; */
+}
+.circle-image img{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* margin-top: 20px; */
+    top: 10px;
+}
+/* end */
+/* main start */
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.google-logo{
+    height: 200px;
+    min-width: 100vw;
+    position: relative;
+    left: 40%;
+}
+.google-image{
+    background-image: url('./images/googlelogo.png');
+    background-size: cover;
+    height: 100%;
+    width: 300px;
+    mix-blend-mode: multiply;
+}
+
+.searchbar-input{
+    width: 400px;
+    height: 40px;
+    border: none;  
+}
+.fa-magnifying-glass{
+    font-size: 15px;
+    padding: 10px;
+    color: gray;
+}
+.searchbar{
+    border: 1px solid rgb(217, 201, 201);
+    border-radius: 20px;
+} 
+.fa-microphone{
+    padding: 10px;
+
+    margin-right: 16px;
+    color: blue;
+}
+.fa-camera-retro{
+    color: blueviolet;
+    padding: 10px;
+
+}
+/* main end */
+/* section start */
+.section-con{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 40px;
+    width: 120px; 
+    border: none;   
+    margin-right: 10px;
+}
+button:hover{
+    border: 1px solid lightgray;
+}
+/* end */
+.foot{
+    position: fixed;
+    max-height: auto;
+    bottom: 0px;
+    min-width: 100vw;
+}
+.loc{
+    background-color: #d7dade;
+    padding: 20px;
+    border-bottom: 1px solid #5f646d;
+    color: black;
+}
+.foot-links{
+    background-color: #d7dade;
+    height: 46px;
+    padding-top: 10px;
+}
+#right-section{
+    /* position: relative; */
+    margin-left: 780px;
+}
+.foot-links a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+
+@media (max-width: 1024px){
+    
+    .circle-image img{
+        margin-right: 10px;
+    }
+    .google-logo{
+        left: 36%;
+    }
+
+}
+
+
+
+@media (max-width: 768px){
+    .circle-image img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .google-logo{
+        left: 30%;
+    }
+    #right-section{
+        margin-left: 0px;
+    }
+}
+
+
+
+@media (max-width: 435px){
+
+    .navbar{
+        min-width: 100vw;
+        height: 30px;
+    }
+    .navoptions a {
+        margin-right: 10px;
+    }
+    #flask{
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .dots{
+        font-size: 15px;
+    }
+    .circle-image img{
+        height: 25px;
+        width: 25px;
+        margin-left: 10px;
+    }
+    .searchbar-input{
+        width: 200px;
+    }
+    .google-logo{
+        left: 15%;
+    }
+}
+
+@media(max-width: 325px){
+    .searchbar-input{
+        width: 150px;
+    }
+    .fa-magnifying-glass{
+        font-size: 15px;
+        padding: 8px;
+    }
+ 
+    .fa-microphone{
+        padding: 8px;
+    
+        margin-right: 10px;
+    }
+    .fa-camera-retro{
+        padding: 8px;
+    
+    }
+
+    .google-logo{
+        left: 5%;
+    }
+}
